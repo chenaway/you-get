@@ -33,10 +33,7 @@ else:
     default_encoding = locale.getpreferredencoding().lower()
 
 def tr(s):
-    if default_encoding == 'utf-8':
-        return s
-    else:
-        return str(s.encode('utf-8'))[2:-1]
+    return s
 
 # DEPRECATED in favor of match1()
 def r1(pattern, text):
